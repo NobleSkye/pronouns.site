@@ -10,7 +10,7 @@ type Props = {
   params: { pronoun: string }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: { pronoun: string } }): Promise<Metadata> {
   const pronounSet = getPronounSetBySlug(params.pronoun)
 
   if (!pronounSet) {
