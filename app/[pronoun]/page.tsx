@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
+// Removed unused import of PageProps from 'next/types'
 
 type Props = {
   params: {
@@ -43,7 +44,7 @@ export async function generateStaticParams() {
 }
 
 // Fix: Add a default value for params
-export default async function PronounPage({ params }: Props) {
+export default async function PronounPage({ params }: PageProps<{ pronoun: string }>) {
   const pronounSet = await getPronounSetBySlug(params.pronoun);
 
   if (!pronounSet) {
