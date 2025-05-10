@@ -82,6 +82,57 @@ export const pronounSets: PronounSet[] = [
       "She completed the project Herself, and He was proud of Himself.",
     ],
   },
+  {
+    slug: "she-xe",
+    title: "She/Xe Pronouns",
+    subject: "She/Xe",
+    object: "Her/Xem",
+    possessiveAdj: "Her/Xyr",
+    possessivePro: "Hers/Xyrs",
+    reflexive: "Herself/Xemself",
+    description:
+      "Mixed pronouns that combine feminine and neopronoun forms, used by some gender-nonconforming or nonbinary feminine people.",
+    examples: [
+      "She went to the park, and Xe enjoyed the weather.",
+      "I gave Her the report, and Xem reviewed it.",
+      "The decision was Hers to make, and Xyr opinion mattered.",
+      "She finished it Herself, while Xe helped Xemself.",
+    ],
+  },
+  {
+    slug: "she-ze",
+    title: "She/Ze Pronouns",
+    subject: "She/Ze",
+    object: "Her/Zir",
+    possessiveAdj: "Her/Zir",
+    possessivePro: "Hers/Zirs",
+    reflexive: "Herself/Zirself",
+    description:
+      "Mixed pronouns that combine feminine and neopronoun forms, offering flexibility in gender expression.",
+    examples: [
+      "She went to work, and Ze had a productive day.",
+      "I sent Her the email, and Zir responded quickly.",
+      "The project was Hers to manage, and Zir contributions were valuable.",
+      "She completed it Herself, while Ze did Zirself proud.",
+    ],
+  },
+  {
+    slug: "she-it",
+    title: "She/It Pronouns",
+    subject: "She/It",
+    object: "Her/It",
+    possessiveAdj: "Her/Its",
+    possessivePro: "Hers/Its",
+    reflexive: "Herself/Itself",
+    description:
+      "Mixed pronouns that combine feminine and neutral object pronouns, sometimes used by neurodivergent or otherkin individuals.",
+    examples: [
+      "She went to the meeting, and It took notes.",
+      "I gave Her the documents, and It reviewed them.",
+      "The choice was Hers to make, and Its perspective was unique.",
+      "She did the work Herself, while It handled Its part.",
+    ],
+  },
 
   // He/* combinations
   {
@@ -112,10 +163,10 @@ export const pronounSets: PronounSet[] = [
     description:
       "Mixed pronouns that combine masculine and gender-neutral forms, often used by non-binary masculine or gender-fluid people.",
     examples: [
-      "He delivered the report, and They reviewed it.",
-      "I called Him and Them for assistance with the task.",
-      "The decision was His, and They supported it wholeheartedly.",
-      "He prepared the presentation Himself, with Them helping out.",
+      "He went to class, and They took good notes.",
+      "I gave Him the book, and They enjoyed it.",
+      "The project was His to lead, and Their input was valuable.",
+      "He did it Himself, while They helped Themselves.",
     ],
   },
   {
@@ -133,6 +184,57 @@ export const pronounSets: PronounSet[] = [
       "I gave Him the book, and She really enjoyed it.",
       "The decision was His to make, and Hers to consider.",
       "He completed the project Himself, and She reviewed it Herself.",
+    ],
+  },
+  {
+    slug: "he-xe",
+    title: "He/Xe Pronouns",
+    subject: "He/Xe",
+    object: "Him/Xem",
+    possessiveAdj: "His/Xyr",
+    possessivePro: "His/Xyrs",
+    reflexive: "Himself/Xemself",
+    description:
+      "Mixed pronouns that combine masculine and neopronoun forms, used by some gender-nonconforming or nonbinary masculine people.",
+    examples: [
+      "He went to the park, and Xe enjoyed the weather.",
+      "I gave Him the report, and Xem reviewed it.",
+      "The decision was His to make, and Xyr opinion mattered.",
+      "He finished it Himself, while Xe helped Xemself.",
+    ],
+  },
+  {
+    slug: "he-ze",
+    title: "He/Ze Pronouns",
+    subject: "He/Ze",
+    object: "Him/Zir",
+    possessiveAdj: "His/Zir",
+    possessivePro: "His/Zirs",
+    reflexive: "Himself/Zirself",
+    description:
+      "Mixed pronouns that combine masculine and neopronoun forms, offering flexibility in gender expression.",
+    examples: [
+      "He went to work, and Ze had a productive day.",
+      "I sent Him the email, and Zir responded quickly.",
+      "The project was His to manage, and Zir contributions were valuable.",
+      "He completed it Himself, while Ze did Zirself proud.",
+    ],
+  },
+  {
+    slug: "he-it",
+    title: "He/It Pronouns",
+    subject: "He/It",
+    object: "Him/It",
+    possessiveAdj: "His/Its",
+    possessivePro: "His/Its",
+    reflexive: "Himself/Itself",
+    description:
+      "Mixed pronouns that combine masculine and neutral object pronouns, sometimes used by neurodivergent or otherkin individuals.",
+    examples: [
+      "He went to the meeting, and It took notes.",
+      "I gave Him the documents, and It reviewed them.",
+      "The choice was His to make, and Its perspective was unique.",
+      "He did the work Himself, while It handled Its part.",
     ],
   },
 
@@ -186,6 +288,57 @@ export const pronounSets: PronounSet[] = [
       "I sent Them the email, and He responded quickly.",
       "The project is Theirs to lead, and He is ready.",
       "They did it Themselves, and He contributed His part.",
+    ],
+  },
+  {
+    slug: "they-xe",
+    title: "They/Xe Pronouns",
+    subject: "They/Xe",
+    object: "Them/Xem",
+    possessiveAdj: "Their/Xyr",
+    possessivePro: "Theirs/Xyrs",
+    reflexive: "Themselves/Xemself",
+    description:
+      "Mixed pronouns that combine gender-neutral and neopronoun forms, used by some nonbinary individuals.",
+    examples: [
+      "They went to the park, and Xe enjoyed the weather.",
+      "I met Them at the store, and Xem at the cafe.",
+      "The project was Theirs to lead, and Xyr to support.",
+      "They did it Themselves, while Xe handled it Xemself.",
+    ],
+  },
+  {
+    slug: "they-ze",
+    title: "They/Ze Pronouns",
+    subject: "They/Ze",
+    object: "Them/Zir",
+    possessiveAdj: "Their/Zir",
+    possessivePro: "Theirs/Zirs",
+    reflexive: "Themselves/Zirself",
+    description:
+      "Mixed pronouns that combine gender-neutral and neopronoun forms, offering multiple options for gender expression.",
+    examples: [
+      "They went to class, and Ze took notes.",
+      "I saw Them at lunch, and Zir at dinner.",
+      "The book was Theirs to read, and Zir to review.",
+      "They finished Themselves, while Ze worked Zirself.",
+    ],
+  },
+  {
+    slug: "they-it",
+    title: "They/It Pronouns",
+    subject: "They/It",
+    object: "Them/It",
+    possessiveAdj: "Their/Its",
+    possessivePro: "Theirs/Its",
+    reflexive: "Themselves/Itself",
+    description:
+      "Mixed pronouns that combine gender-neutral and neutral object pronouns, used by some nonbinary, neurodivergent, or otherkin individuals.",
+    examples: [
+      "They went to the park, and It enjoyed the weather.",
+      "I gave Them the report, and It reviewed it.",
+      "The choice was Theirs to make, and Its to consider.",
+      "They did the work Themselves, while It handled Its part.",
     ],
   },
 
