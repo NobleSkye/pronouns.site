@@ -7,7 +7,9 @@ import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
 type Props = {
-  params: { pronoun: string }
+  params: {
+    pronoun: string
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -39,7 +41,7 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ pronoun: slug }))
 }
 
-export default function PronounPage({ params }: Props) {
+export default async function PronounPage({ params }: Props) {
   const pronounSet = getPronounSetBySlug(params.pronoun)
 
   if (!pronounSet) {

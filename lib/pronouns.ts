@@ -12,6 +12,23 @@ export type PronounSet = {
 
 export const pronounSets: PronounSet[] = [
   {
+    slug: "my-name",
+    title: "Name Pronouns",
+    subject: "Name",
+    object: "Name",
+    possessiveAdj: "Name's",
+    possessivePro: "Name's",
+    reflexive: "Name",
+    description:
+      "A pronoun set indicating that you should use the person's actual name instead of traditional pronouns.",
+    examples: [
+      "Steve went to the meeting on time.",
+      "I handed the package to Skylar.",
+      "The award was Alex's to accept.",
+      "Ciara completed the project.",
+    ],
+  },
+  {
     slug: "she-her",
     title: "She/Her Pronouns",
     subject: "She",
@@ -26,57 +43,6 @@ export const pronounSets: PronounSet[] = [
       "I gave Her the book She wanted for Her birthday.",
       "The decision was Hers to make.",
       "She made the cake Herself.",
-    ],
-  },
-  {
-    slug: "he-him",
-    title: "He/Him Pronouns",
-    subject: "He",
-    object: "Him",
-    possessiveAdj: "His",
-    possessivePro: "His",
-    reflexive: "Himself",
-    description:
-      "Masculine pronouns commonly used by men and masculine-identifying people.",
-    examples: [
-      "He went to the gym after work.",
-      "I sent Him the email with the information.",
-      "The car is His, not mine.",
-      "He fixed the computer Himself.",
-    ],
-  },
-  {
-    slug: "they-them",
-    title: "They/Them Pronouns",
-    subject: "They",
-    object: "Them",
-    possessiveAdj: "Their",
-    possessivePro: "Theirs",
-    reflexive: "Themselves",
-    description:
-      "Gender-neutral pronouns that can be used by anyone, especially common for non-binary people.",
-    examples: [
-      "They are coming over for dinner tonight.",
-      "I gave Them the documents They needed.",
-      "The decision is Theirs to make.",
-      "They completed the project Themselves.",
-    ],
-  },
-  {
-    slug: "xe-xem",
-    title: "Xe/Xem Pronouns",
-    subject: "Xe",
-    object: "Xem",
-    possessiveAdj: "Xyr",
-    possessivePro: "Xyrs",
-    reflexive: "Xemself",
-    description:
-      "Neopronouns that provide a specifically gender-neutral option outside of the singular They.",
-    examples: [
-      "Xe went to the concert last night.",
-      "I talked to Xem about the project.",
-      "The book is Xyr favorite.",
-      "Xe completed the assignment Xemself.",
     ],
   },
   {
@@ -97,6 +63,74 @@ export const pronounSets: PronounSet[] = [
     ],
   },
   {
+    slug: "she-they",
+    title: "She/They Pronouns",
+    subject: "She/They",
+    object: "Her/Them",
+    possessiveAdj: "Her/Their",
+    possessivePro: "Hers/Theirs",
+    reflexive: "Herself/Themselves",
+    description:
+      "Mixed pronouns that combine feminine and gender-neutral forms, often used by non-binary or gender-fluid people.",
+    examples: [
+      "She went to the meeting, and They supported her ideas.",
+      "I shared the news with Her and Them.",
+      "The decision was Her call, and They agreed with it.",
+      "She managed the project Herself, with Them by her side.",
+    ],
+  },
+  {
+    slug: "he-him",
+    title: "He/Him Pronouns",
+    subject: "He",
+    object: "Him",
+    possessiveAdj: "His",
+    possessivePro: "His",
+    reflexive: "Himself",
+    description:
+      "Masculine pronouns commonly used by men and masculine-identifying people.",
+    examples: [
+      "He went to the gym after work.",
+      "I sent Him the email with the information.",
+      "The car is His, not mine.",
+      "He fixed the computer Himself.",
+    ],
+  },
+  {
+    slug: "he-they",
+    title: "He/They Pronouns",
+    subject: "He/They",
+    object: "Him/Them",
+    possessiveAdj: "His/Their",
+    possessivePro: "His/Theirs",
+    reflexive: "Himself/Themselves",
+    description:
+      "Mixed pronouns that combine masculine and gender-neutral forms, often used by non-binary masculine or gender-fluid people.",
+    examples: [
+      "He delivered the report, and They reviewed it.",
+      "I called Him and Them for assistance with the task.",
+      "The decision was His, and They supported it wholeheartedly.",
+      "He prepared the presentation Himself, with Them helping out.",
+    ],
+  },
+  {
+    slug: "they-them",
+    title: "They/Them Pronouns",
+    subject: "They",
+    object: "Them",
+    possessiveAdj: "Their",
+    possessivePro: "Theirs",
+    reflexive: "Themselves",
+    description:
+      "Gender-neutral pronouns that can be used by anyone, especially common for non-binary people.",
+    examples: [
+      "They are coming over for dinner tonight.",
+      "I gave Them the documents They needed.",
+      "The decision is Theirs to make.",
+      "They completed the project Themselves.",
+    ],
+  },
+  {
     slug: "they-her",
     title: "They/Her Pronouns",
     subject: "They/She",
@@ -111,6 +145,23 @@ export const pronounSets: PronounSet[] = [
       "I gave Them a gift, and She loved it.",
       "The book is Theirs to keep, and Hers to enjoy.",
       "They finished the project Themselves, and She was proud of Herself.",
+    ],
+  },
+  {
+    slug: "xe-xem",
+    title: "Xe/Xem Pronouns",
+    subject: "Xe",
+    object: "Xem",
+    possessiveAdj: "Xyr",
+    possessivePro: "Xyrs",
+    reflexive: "Xemself",
+    description:
+      "Neopronouns that provide a specifically gender-neutral option outside of the singular They.",
+    examples: [
+      "Xe went to the concert last night.",
+      "I talked to Xem about the project.",
+      "The book is Xyr favorite.",
+      "Xe completed the assignment Xemself.",
     ],
   },
   {
@@ -265,23 +316,6 @@ export const pronounSets: PronounSet[] = [
       "I gave It the book It wanted to read.",
       "The choice is Its to make.",
       "It completed the project Itself.",
-    ],
-  },
-  {
-    slug: "name",
-    title: "Name Pronouns",
-    subject: "Name",
-    object: "Name",
-    possessiveAdj: "Name's",
-    possessivePro: "Name's",
-    reflexive: "Name",
-    description:
-      "A pronoun set indicating that you should use the person's actual name instead of traditional pronouns.",
-    examples: [
-      "Steve went to the meeting on time.",
-      "I handed the package to Skylar.",
-      "The award was Alex's to accept.",
-      "Ciara completed the project.",
     ],
   },
 ]
