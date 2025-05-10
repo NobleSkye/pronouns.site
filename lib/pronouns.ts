@@ -29,6 +29,23 @@ export const pronounSets: PronounSet[] = [
       "Ciara completed the project.",
     ],
   },
+    {
+    slug: "random",
+    title: "random Pronouns",
+    subject: "random",
+    object: "random",
+    possessiveAdj: "random's",
+    possessivePro: "random's",
+    reflexive: "random",
+    description:
+      "A pronoun set indicating that you should use the person's actual name instead of traditional pronouns.",
+    examples: [
+      "Steve went to the meeting on time.",
+      "I handed the package to Skylar.",
+      "The award was Alex's to accept.",
+      "Ciara completed the project.",
+    ],
+  },
 
   // She/* combinations
   {
