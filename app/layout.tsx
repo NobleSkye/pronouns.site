@@ -50,7 +50,12 @@ export default function RootLayout({
             <footer className="border-t border-border/40 bg-background/80 backdrop-blur-sm">
               <div className="container flex h-16 items-center justify-between">
                 <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} pronouns.site</p>
-                <p className="text-sm text-muted-foreground">Made with ❤️ by NobleSkye</p>
+                <a href="https://github.com/NobleSkye" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground">
+                  Made with ❤️ by NobleSkye
+                </a>
               </div>
             </footer>
           </div>
