@@ -11,6 +11,7 @@ export type PronounSet = {
 }
 
 export const pronounSets: PronounSet[] = [
+  // Names first
   {
     slug: "my-name",
     title: "Name Pronouns",
@@ -28,6 +29,8 @@ export const pronounSets: PronounSet[] = [
       "Ciara completed the project.",
     ],
   },
+
+  // She/* combinations
   {
     slug: "she-her",
     title: "She/Her Pronouns",
@@ -43,23 +46,6 @@ export const pronounSets: PronounSet[] = [
       "I gave Her the book She wanted for Her birthday.",
       "The decision was Hers to make.",
       "She made the cake Herself.",
-    ],
-  },
-  {
-    slug: "she-him",
-    title: "She/Him Pronouns",
-    subject: "She/He",
-    object: "Her/Him",
-    possessiveAdj: "Her/His",
-    possessivePro: "Hers/His",
-    reflexive: "Herself/Himself",
-    description:
-      "Mixed pronouns that combine feminine and masculine forms, often used by genderfluid or bigender people.",
-    examples: [
-      "She went to the store, and He bought some groceries.",
-      "I gave Her the book, and He really enjoyed it.",
-      "The decision was Hers to make, and His opinion mattered too.",
-      "She completed the project Herself, and He was proud of Himself.",
     ],
   },
   {
@@ -79,6 +65,25 @@ export const pronounSets: PronounSet[] = [
       "She managed the project Herself, with Them by her side.",
     ],
   },
+  {
+    slug: "she-him",
+    title: "She/Him Pronouns",
+    subject: "She/He",
+    object: "Her/Him",
+    possessiveAdj: "Her/His",
+    possessivePro: "Hers/His",
+    reflexive: "Herself/Himself",
+    description:
+      "Mixed pronouns that combine feminine and masculine forms, often used by genderfluid or bigender people.",
+    examples: [
+      "She went to the store, and He bought some groceries.",
+      "I gave Her the book, and He really enjoyed it.",
+      "The decision was Hers to make, and His opinion mattered too.",
+      "She completed the project Herself, and He was proud of Himself.",
+    ],
+  },
+
+  // He/* combinations
   {
     slug: "he-him",
     title: "He/Him Pronouns",
@@ -114,6 +119,25 @@ export const pronounSets: PronounSet[] = [
     ],
   },
   {
+    slug: "he-her",
+    title: "He/Her Pronouns",
+    subject: "He/She",
+    object: "Him/Her",
+    possessiveAdj: "His/Her",
+    possessivePro: "His/Hers",
+    reflexive: "Himself/Herself",
+    description:
+      "Mixed pronouns that combine masculine and feminine forms, used by some genderfluid or bigender people.",
+    examples: [
+      "He went to the store, and She bought groceries.",
+      "I gave Him the book, and She really enjoyed it.",
+      "The decision was His to make, and Hers to consider.",
+      "He completed the project Himself, and She reviewed it Herself.",
+    ],
+  },
+
+  // They/* combinations
+  {
     slug: "they-them",
     title: "They/Them Pronouns",
     subject: "They",
@@ -131,8 +155,8 @@ export const pronounSets: PronounSet[] = [
     ],
   },
   {
-    slug: "they-her",
-    title: "They/Her Pronouns",
+    slug: "they-she",
+    title: "They/She Pronouns",
     subject: "They/She",
     object: "Them/Her",
     possessiveAdj: "Their/Her",
@@ -141,12 +165,31 @@ export const pronounSets: PronounSet[] = [
     description:
       "Mixed pronouns that combine gender-neutral and feminine forms, often used by demigirls or non-binary feminine people.",
     examples: [
-      "They went to the park, and She enjoyed the sunshine.",
-      "I gave Them a gift, and She loved it.",
-      "The book is Theirs to keep, and Hers to enjoy.",
-      "They finished the project Themselves, and She was proud of Herself.",
+      "They are going to the park, and She is excited.",
+      "I gave Them the book, and She loved it.",
+      "The choice is Theirs to make, and She agrees.",
+      "They finished it Themselves, while She helped.",
     ],
   },
+  {
+    slug: "they-he",
+    title: "They/He Pronouns",
+    subject: "They/He",
+    object: "Them/Him",
+    possessiveAdj: "Their/His",
+    possessivePro: "Theirs/His",
+    reflexive: "Themselves/Himself",
+    description:
+      "Mixed pronouns that combine gender-neutral and masculine forms, often used by demiboys or non-binary masculine people.",
+    examples: [
+      "They are at work, and He is busy.",
+      "I sent Them the email, and He responded quickly.",
+      "The project is Theirs to lead, and He is ready.",
+      "They did it Themselves, and He contributed His part.",
+    ],
+  },
+
+  // Neopronouns
   {
     slug: "xe-xem",
     title: "Xe/Xem Pronouns",
@@ -162,41 +205,6 @@ export const pronounSets: PronounSet[] = [
       "I talked to Xem about the project.",
       "The book is Xyr favorite.",
       "Xe completed the assignment Xemself.",
-    ],
-  },
-  {
-    slug: "any",
-    title: "Any Pronouns",
-    subject: "Any",
-    object: "All",
-    possessiveAdj: "Any",
-    possessivePro: "All",
-    reflexive: "Anyself",
-    description:
-      "A placeholder indicating that a person is comfortable with any pronouns being used to refer to them. Replace with the pronouns of your choice in context.",
-    examples: [
-      "You can use He, She, They, or any other pronouns for this person.",
-      "They’re comfortable with all pronouns, so you can switch between them.",
-      "Any pronouns work for them, so use whichever feels natural to you.",
-      "They don't have a preference for specific pronouns.",
-    ],
-  },
-  {
-    slug: "ask-for",
-    title: "Ask For Pronouns",
-    subject: "Ask",
-    object: "For",
-    possessiveAdj: "Your",
-    possessivePro: "Yours",
-    reflexive: "Yourself",
-    description:
-      "An indication that you should ask for a person’s pronouns rather than assuming them.",
-    examples: [
-      "Before referring to someone, ask for their pronouns.",
-      "Instead of assuming, ask for the pronouns they prefer.",
-      "Their pronouns may vary, so it’s best to ask.",
-      "Always ask for pronouns if you’re unsure.",
-      "Hello there! I’m [insert name], and I use [insert pronouns]. What about you?",
     ],
   },
   {
@@ -234,23 +242,6 @@ export const pronounSets: PronounSet[] = [
     ],
   },
   {
-    slug: "fae-faer",
-    title: "Fae/Faer Pronouns",
-    subject: "Fae",
-    object: "Faer",
-    possessiveAdj: "Faer",
-    possessivePro: "Faers",
-    reflexive: "Faerself",
-    description:
-      "Neopronouns often associated with a connection to nature or fae/fairy folklore, used by some non-binary individuals.",
-    examples: [
-      "Fae went for a walk in the forest.",
-      "I gave Faer the book about mythology.",
-      "The garden is Faer favorite place to relax.",
-      "Fae made the costume Faerself.",
-    ],
-  },
-  {
     slug: "ey-em",
     title: "Ey/Em Pronouns",
     subject: "Ey",
@@ -265,23 +256,6 @@ export const pronounSets: PronounSet[] = [
       "I talked to Em about the project yesterday.",
       "The research is Eir main focus this semester.",
       "Ey completed the assignment Emself.",
-    ],
-  },
-  {
-    slug: "ne-nem",
-    title: "Ne/Nem Pronouns",
-    subject: "Ne",
-    object: "Nem",
-    possessiveAdj: "Nir",
-    possessivePro: "Nirs",
-    reflexive: "Nemself",
-    description:
-      "Neopronouns that provide a gender-neutral alternative to traditional binary pronouns.",
-    examples: [
-      "Ne is going to the concert tonight.",
-      "I invited Nem to join our study group.",
-      "The book is Nir favorite.",
-      "Ne finished the project Nemself.",
     ],
   },
   {
@@ -302,6 +276,40 @@ export const pronounSets: PronounSet[] = [
     ],
   },
   {
+    slug: "ne-nem",
+    title: "Ne/Nem Pronouns",
+    subject: "Ne",
+    object: "Nem",
+    possessiveAdj: "Nir",
+    possessivePro: "Nirs",
+    reflexive: "Nemself",
+    description:
+      "Neopronouns that provide a gender-neutral alternative to traditional binary pronouns.",
+    examples: [
+      "Ne is going to the concert tonight.",
+      "I invited Nem to join our study group.",
+      "The book is Nir favorite.",
+      "Ne finished the project Nemself.",
+    ],
+  },
+  {
+    slug: "fae-faer",
+    title: "Fae/Faer Pronouns",
+    subject: "Fae",
+    object: "Faer",
+    possessiveAdj: "Faer",
+    possessivePro: "Faers",
+    reflexive: "Faerself",
+    description:
+      "Neopronouns often associated with a connection to nature or fae/fairy folklore, used by some non-binary individuals.",
+    examples: [
+      "Fae went for a walk in the forest.",
+      "I gave Faer the book about mythology.",
+      "The garden is Faer favorite place to relax.",
+      "Fae made the costume Faerself.",
+    ],
+  },
+  {
     slug: "it-its",
     title: "It/Its Pronouns",
     subject: "It",
@@ -316,6 +324,77 @@ export const pronounSets: PronounSet[] = [
       "I gave It the book It wanted to read.",
       "The choice is Its to make.",
       "It completed the project Itself.",
+    ],
+  },
+  {
+    slug: "ae-aer",
+    title: "Ae/Aer Pronouns",
+    subject: "Ae",
+    object: "Aer",
+    possessiveAdj: "Aer",
+    possessivePro: "Aers",
+    reflexive: "Aerself",
+    description:
+      "Neopronouns that provide a gender-neutral alternative, growing in popularity in online communities.",
+    examples: [
+      "Ae is attending the conference.",
+      "I met Aer at the community center.",
+      "The research paper is Aer work.",
+      "Ae presented the findings Aerself.",
+    ],
+  },
+  {
+    slug: "per-per",
+    title: "Per/Per Pronouns",
+    subject: "Per",
+    object: "Per",
+    possessiveAdj: "Per",
+    possessivePro: "Pers",
+    reflexive: "Perself",
+    description:
+      "Gender-neutral pronouns derived from 'person', used in some academic and professional settings.",
+    examples: [
+      "Per is working on the research project.",
+      "I sent the document to Per yesterday.",
+      "The findings were Per own discovery.",
+      "Per completed the analysis Perself.",
+    ],
+  },
+
+  // Special cases last
+  {
+    slug: "any",
+    title: "Any Pronouns",
+    subject: "Any",
+    object: "All",
+    possessiveAdj: "Any",
+    possessivePro: "All",
+    reflexive: "Anyself",
+    description:
+      "A placeholder indicating that a person is comfortable with any pronouns being used to refer to them. Replace with the pronouns of your choice in context.",
+    examples: [
+      "You can use He, She, They, or any other pronouns for this person.",
+      "They’re comfortable with all pronouns, so you can switch between them.",
+      "Any pronouns work for them, so use whichever feels natural to you.",
+      "They don't have a preference for specific pronouns.",
+    ],
+  },
+  {
+    slug: "ask-for",
+    title: "Ask For Pronouns",
+    subject: "Ask",
+    object: "For",
+    possessiveAdj: "Your",
+    possessivePro: "Yours",
+    reflexive: "Yourself",
+    description:
+      "An indication that you should ask for a person’s pronouns rather than assuming them.",
+    examples: [
+      "Before referring to someone, ask for their pronouns.",
+      "Instead of assuming, ask for the pronouns they prefer.",
+      "Their pronouns may vary, so it’s best to ask.",
+      "Always ask for pronouns if you’re unsure.",
+      "Hello there! I’m [insert name], and I use [insert pronouns]. What about you?",
     ],
   },
 ]
