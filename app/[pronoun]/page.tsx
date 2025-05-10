@@ -5,16 +5,14 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
-// Removed unused import of PageProps from 'next/types'
 
-type Props = {
+interface PronounPageProps {
   params: {
-    pronoun: string
-  }
+    pronoun: string;
+  };
 }
 
-// Fix: Ensure params is not undefined
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PronounPageProps): Promise<Metadata> {
   const pronounSet = await getPronounSetBySlug(params.pronoun);
 
   if (!pronounSet) {
@@ -43,8 +41,7 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ pronoun: slug }));
 }
 
-// Fix: Add a default value for params
-export default async function PronounPage({ params }: Props) {
+export default async function PronounPage({ params }: PronounPageProps) {
   const pronounSet = await getPronounSetBySlug(params.pronoun);
 
   if (!pronounSet) {
