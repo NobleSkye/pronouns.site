@@ -16,8 +16,6 @@ type Props = {
 // Fix: Ensure params is not undefined
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pronounSet = await getPronounSetBySlug(params.pronoun);
-export async function generateMetadata({ params }: { params: { pronoun: string } }): Promise<Metadata> {
-  const pronounSet = getPronounSetBySlug(params.pronoun)
 
   if (!pronounSet) {
     return {
