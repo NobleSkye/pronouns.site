@@ -12,13 +12,14 @@ type Props = {
   }
 }
 
+// Fix: Ensure params is not undefined
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const pronounSet = await getPronounSetBySlug(params.pronoun)
+  const pronounSet = await getPronounSetBySlug(params.pronoun);
 
   if (!pronounSet) {
     return {
       title: "Pronoun not found",
-    }
+    };
   }
 
   return {
@@ -33,19 +34,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: pronounSet.title,
       description: pronounSet.description,
     },
-  }
+  };
 }
 
 export async function generateStaticParams() {
-  const slugs = await getAllPronounSlugs()
-  return slugs.map((slug) => ({ pronoun: slug }))
+  const slugs = await getAllPronounSlugs();
+  return slugs.map((slug) => ({ pronoun: slug }));
 }
 
-export default function PronounPage({ params }: Props) {
-  const pronounSet = getPronounSetBySlug(params.pronoun)
+// Fix: Add a default value for params
+export default async function PronounPage({ params }: Props) {
+  const pronounSet = await getPronounSetBySlug(params.pronoun);
 
   if (!pronounSet) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -68,5 +70,5 @@ export default function PronounPage({ params }: Props) {
         </FloatingCard>
       </div>
     </div>
-  )
+  );
 }
