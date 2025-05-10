@@ -64,7 +64,6 @@ export const pronounSets: PronounSet[] = [
       "They don't have a preference for specific pronouns.",
     ],
   },
-
   // Base pronouns
   {
     slug: "she-her",
@@ -118,7 +117,6 @@ export const pronounSets: PronounSet[] = [
       "They completed the work Themselves.",
     ],
   },
-
   // Mixed binary combinations (in pairs)
   {
     slug: "she-they",
@@ -154,7 +152,6 @@ export const pronounSets: PronounSet[] = [
       "They finished it Themselves, while She helped.",
     ],
   },
-
   // Standard neopronouns
   {
     slug: "xe-xem",
