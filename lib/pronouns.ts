@@ -39,13 +39,13 @@ export const pronounSets: PronounSet[] = [
     possessiveAdj: "Her",
     possessivePro: "Hers",
     reflexive: "Herself",
-    description:
-      "Feminine pronouns commonly used by women and feminine-identifying people.",
+    description: 
+      "Traditional feminine pronouns commonly used by women and feminine-identifying individuals. These pronouns express a feminine gender identity.",
     examples: [
-      "She went to the store to buy groceries.",
-      "I gave Her the book She wanted for Her birthday.",
-      "The decision was Hers to make.",
-      "She made the cake Herself.",
+      "She is working on the project today.",
+      "I gave the book to Her.",
+      "Her work was excellent.",
+      "She completed the task Herself.",
     ],
   },
   {
@@ -57,12 +57,12 @@ export const pronounSets: PronounSet[] = [
     possessivePro: "Hers/Theirs",
     reflexive: "Herself/Themselves",
     description:
-      "Mixed pronouns that combine feminine and gender-neutral forms, often used by non-binary or gender-fluid people.",
+      "Mixed pronouns combining feminine and gender-neutral forms. The person is comfortable with both sets used interchangeably or in alternation. Common among non-binary feminine people, demigirls, or gender-fluid individuals.",
     examples: [
-      "She went to the meeting, and They supported her ideas.",
-      "I shared the news with Her and Them.",
-      "The decision was Her call, and They agreed with it.",
-      "She managed the project Herself, with Them by her side.",
+      "She is at the meeting. They are taking notes. (Both forms in sequence)",
+      "You can give it to Her or Them. (Alternative usage)",
+      "The project is Hers and Theirs to share. (Shared possession)",
+      "She can do it Herself, or They can handle it Themselves. (Either form)",
     ],
   },
   {
@@ -74,12 +74,12 @@ export const pronounSets: PronounSet[] = [
     possessivePro: "Hers/His",
     reflexive: "Herself/Himself",
     description:
-      "Mixed pronouns that combine feminine and masculine forms, often used by genderfluid or bigender people.",
+      "Mixed pronouns indicating the person uses both she and him pronouns interchangeably or in specific contexts. Common in genderfluid, bigender, or gender non-conforming communities. Either pronoun set can be used individually or alternated based on preference.",
     examples: [
-      "She went to the store, and He bought some groceries.",
-      "I gave Her the book, and He really enjoyed it.",
-      "The decision was Hers to make, and His opinion mattered too.",
-      "She completed the project Herself, and He was proud of Himself.",
+      "She went to the store today, he bought some groceries. (Using both in sequence)",
+      "Her project was excellent, I talked to him about it. (Alternating usage)",
+      "The book is hers to read first, then his to review. (Possessive forms)",
+      "She can do it herself, or he can handle it himself. (Reflexive forms)",
     ],
   },
   {
@@ -144,12 +144,12 @@ export const pronounSets: PronounSet[] = [
     possessivePro: "His",
     reflexive: "Himself",
     description:
-      "Masculine pronouns commonly used by men and masculine-identifying people.",
+      "Traditional masculine pronouns commonly used by men and masculine-identifying individuals. These pronouns express a masculine gender identity.",
     examples: [
-      "He went to the gym after work.",
-      "I sent Him the email with the information.",
-      "The car is His, not mine.",
-      "He fixed the computer Himself.",
+      "He is attending the meeting.",
+      "I sent the email to Him.",
+      "His presentation was informative.",
+      "He prepared the report Himself.",
     ],
   },
   {
@@ -248,12 +248,12 @@ export const pronounSets: PronounSet[] = [
     possessivePro: "Theirs",
     reflexive: "Themselves",
     description:
-      "Gender-neutral pronouns that can be used by anyone, especially common for non-binary people.",
+      "Gender-neutral singular pronouns used by many non-binary individuals, as well as those who prefer not to use gendered pronouns. These pronouns have a long history of singular usage in English.",
     examples: [
-      "They are coming over for dinner tonight.",
-      "I gave Them the documents They needed.",
-      "The decision is Theirs to make.",
-      "They completed the project Themselves.",
+      "They are leading the team meeting.",
+      "I spoke with Them about the project.",
+      "Their ideas were innovative.",
+      "They completed the work Themselves.",
     ],
   },
   {
@@ -352,12 +352,12 @@ export const pronounSets: PronounSet[] = [
     possessivePro: "Xyrs",
     reflexive: "Xemself",
     description:
-      "Neopronouns that provide a specifically gender-neutral option outside of the singular They.",
+      "A widely-used set of neopronouns that provide a specifically gender-neutral alternative. Created to fill the need for singular gender-neutral pronouns distinct from 'they'.",
     examples: [
-      "Xe went to the concert last night.",
-      "I talked to Xem about the project.",
-      "The book is Xyr favorite.",
-      "Xe completed the assignment Xemself.",
+      "Xe is working on the project.",
+      "I sent the documents to Xem.",
+      "The research is Xyr responsibility.",
+      "Xe completed the work Xemself.",
     ],
   },
   {
