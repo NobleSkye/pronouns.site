@@ -1,18 +1,17 @@
 "use client"
 
-import type React from "react"
-
 import { useRef } from "react"
 import { motion } from "framer-motion"
 import { cn } from "@/lib/utils"
 
-interface FloatingCardProps extends React.HTMLAttributes<HTMLDivElement> {
+interface FloatingCardProps {
   children: React.ReactNode
+  className?: string
   delay?: number
   offset?: number
 }
 
-export function FloatingCard({ children, className, delay = 0, offset = 10, ...props }: FloatingCardProps) {
+export function FloatingCard({ children, className, delay = 0, offset = 10 }: FloatingCardProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   return (
@@ -33,7 +32,6 @@ export function FloatingCard({ children, className, delay = 0, offset = 10, ...p
         y: -offset,
         transition: { duration: 0.2 },
       }}
-      {...props}
     >
       {children}
     </motion.div>

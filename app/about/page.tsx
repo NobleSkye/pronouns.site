@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn about pronouns.site and explore our educational resources on different pronoun sets",
+  description: "Informational site that teaches with examples of how different pronouns sets are used",
 }
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       <div className="container py-12">
         <h1 className="text-4xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400">
-          About pronouns.site
+          About Pronouns.site
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
