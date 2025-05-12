@@ -5,6 +5,7 @@ import "./globals.css"
 import Link from "next/link"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/mode-toggle"
+import { SuggestButton } from "@/components/suggest-button"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -51,9 +52,7 @@ export default function RootLayout({
               <div className="container flex h-16 items-center justify-between">
                 <div className="flex items-center gap-4">
                   <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} pronouns.site</p>
-                  <Link href="/suggest" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Suggestions
-                  </Link>
+                  <SuggestButton />
                 </div>
                 <a href="https://github.com/NobleSkye" 
                   target="_blank" 

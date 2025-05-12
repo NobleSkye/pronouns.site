@@ -7,19 +7,18 @@ import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
 interface PageProps {
-  params: Promise<{ pronoun: string }>
+  params: { pronoun: string }
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const resolvedParams = await params;
-  const pronounSet = await getPronounSetBySlug(resolvedParams.pronoun);
+export async function generateMetadata({ params: { pronoun } }: PageProps): Promise<Metadata> {
+  const pronounSet = await getPronounSetBySlug(pronoun);
 
   if (!pronounSet) {
     return {
       title: "Pronoun not found",
     };
   }
-w
+
   return {
     title: pronounSet.title,
     description: pronounSet.description,
@@ -40,9 +39,8 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ pronoun: slug }));
 }
 
-export default async function PronounPage({ params }: PageProps) {
-  const resolvedParams = await params;
-  const pronounSet = await getPronounSetBySlug(resolvedParams.pronoun);
+export default async function PronounPage({ params: { pronoun } }: PageProps) {
+  const pronounSet = await getPronounSetBySlug(pronoun);
 
   if (!pronounSet) {
     notFound();
@@ -139,6 +137,17 @@ export default async function PronounPage({ params }: PageProps) {
               </div>
             </FloatingCard>
           </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <Button asChild variant="outline">
+            <Link href="/suggest" className="flex items-center gap-2">
+              Request edit for this page
+            </Link>
+          </Button>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Found an issue or want to suggest an improvement? Let us know!
+          </p>
         </div>
       </div>
     </div>
