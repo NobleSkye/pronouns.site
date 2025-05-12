@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
-interface PageProps {
-  params: Promise<{ pronoun: string }>
-}
+type Params = Promise<{ pronoun: string }>
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
   const resolvedParams = await params;
   const pronounSet = await getPronounSetBySlug(resolvedParams.pronoun);
 
@@ -40,7 +42,11 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ pronoun: slug }));
 }
 
-export default async function PronounPage({ params }: PageProps) {
+export default async function PronounPage({
+  params,
+}: {
+  params: Params;
+}) {
   const resolvedParams = await params;
   const pronounSet = await getPronounSetBySlug(resolvedParams.pronoun);
 
@@ -73,6 +79,11 @@ export default async function PronounPage({ params }: PageProps) {
             <FloatingCard>
               <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">About these pronouns</h2>
               <p className="text-base sm:text-lg">{pronounSet.description}</p>
+              {pronounSet.source && (
+                <div className="mt-4 text-sm text-muted-foreground">
+                  <span className="font-medium">Source:</span> {pronounSet.source}
+                </div>
+              )}
             </FloatingCard>
 
             <FloatingCard delay={1}>
@@ -134,6 +145,17 @@ export default async function PronounPage({ params }: PageProps) {
               </div>
             </FloatingCard>
           </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <Button asChild variant="outline">
+            <Link href="/suggest" className="flex items-center gap-2">
+              Request edit for this page
+            </Link>
+          </Button>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Found an issue or want to suggest an improvement? Let us know!
+          </p>
         </div>
       </div>
     </div>

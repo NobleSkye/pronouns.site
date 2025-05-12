@@ -5,6 +5,8 @@ import "./globals.css"
 import Link from "next/link"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ModeToggle } from "@/components/mode-toggle"
+import { SuggestButton } from "@/components/suggest-button"
+import { Github } from "lucide-react"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -49,13 +51,19 @@ export default function RootLayout({
             <main className="flex-1">{children}</main>
             <footer className="border-t border-border/40 bg-background/80 backdrop-blur-sm">
               <div className="container flex h-16 items-center justify-between">
-                <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} pronouns.site</p>
-                <a href="https://github.com/NobleSkye" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground">
-                  Made with ❤️ by NobleSkye
-                </a>
+                <div className="flex items-center gap-4">
+                  <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} pronouns.site</p>
+                  <SuggestButton />
+                </div>
+                <div className="flex items-center gap-2">
+                  <a href="https://github.com/nobleskye/pronouns.site" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+                    <Github className="h-4 w-4" />
+                    Made with ❤️ by NobleSkye
+                  </a>
+                </div>
               </div>
             </footer>
           </div>
