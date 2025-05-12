@@ -24,6 +24,11 @@ export function PronounCard({ pronounSet, index }: PronounCardProps) {
             <p className="font-medium">{pronounSet.object}</p>
           </div>
         </div>
+        {pronounSet.source && (
+          <div className="mt-2 text-sm text-muted-foreground">
+            <span className="font-medium">Source:</span> {pronounSet.source}
+          </div>
+        )}
       </div>
       <Link href={`/${pronounSet.slug}`} className="inline-flex items-center text-primary hover:underline mt-2">
         Learn more <ArrowRight className="ml-1 h-4 w-4" />

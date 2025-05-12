@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: "Pronoun not found",
     };
   }
-
+w
   return {
     title: pronounSet.title,
     description: pronounSet.description,
@@ -73,6 +73,11 @@ export default async function PronounPage({ params }: PageProps) {
             <FloatingCard>
               <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">About these pronouns</h2>
               <p className="text-base sm:text-lg">{pronounSet.description}</p>
+              {pronounSet.source && (
+                <div className="mt-4 text-sm text-muted-foreground">
+                  <span className="font-medium">Source:</span> {pronounSet.source}
+                </div>
+              )}
             </FloatingCard>
 
             <FloatingCard delay={1}>

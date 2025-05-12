@@ -8,6 +8,7 @@ export type PronounSet = {
   reflexive: string
   description: string
   examples: string[]
+  source?: string
 }
 
 export const pronounSets: PronounSet[] = [
@@ -28,6 +29,7 @@ export const pronounSets: PronounSet[] = [
       "The award was Alex's to accept.",
       "Ciara completed the project.",
     ],
+    source: "https://www.pronouns.page/guide/name-pronouns"
   },
   {
     slug: "ask-me",
@@ -44,6 +46,7 @@ export const pronounSets: PronounSet[] = [
       "Their pronouns may change depending on context, so it's best to ask.",
       "They appreciate when people check in about pronoun preferences.",
     ],
+    source: "https://en.wikipedia.org/wiki/Preferred_gender_pronoun"
   },
   {
     slug: "any-all",
@@ -61,6 +64,7 @@ export const pronounSets: PronounSet[] = [
       "Any pronouns work for them, so use whichever feels natural to you.",
       "They don't have a preference for specific pronouns.",
     ],
+    source: "https://en.wikipedia.org/wiki/Gender_neutrality_in_languages_with_gendered_third-person_pronouns#Pronouns_and_alternatives"
   },
 
   // Base and combined pronouns
@@ -81,6 +85,7 @@ export const pronounSets: PronounSet[] = [
       "The decision was Hers to make. (Possessive pronoun)",
       "She completed the task Herself. (Reflexive)",
     ],
+    source: "https://en.wikipedia.org/wiki/Pronoun#Personal_pronouns"
   },
   {
     slug: "she-him",
@@ -98,6 +103,7 @@ export const pronounSets: PronounSet[] = [
       "Her/His project was successful.",
       "She finished it Herself, while He did it Himself.",
     ],
+    source: "https://en.wikipedia.org/wiki/Pronoun#Gender-specific_and_gender-neutral_pronouns"
   },
   {
     slug: "she-them",
@@ -115,6 +121,7 @@ export const pronounSets: PronounSet[] = [
       "Her/Their presentation was excellent.",
       "She finished the project Herself, while They reviewed it Themselves.",
     ],
+    source: "https://en.wikipedia.org/wiki/Non-binary_gender#Pronouns_and_titles"
   },
   {
     slug: "he-him",
@@ -132,6 +139,7 @@ export const pronounSets: PronounSet[] = [
       "His presentation was informative.",
       "He prepared the report Himself.",
     ],
+    source: "https://en.wikipedia.org/wiki/Pronoun#Personal_pronouns"
   },
   {
     slug: "he-her",
@@ -149,6 +157,7 @@ export const pronounSets: PronounSet[] = [
       "His/Her project turned out great.",
       "He did it Himself, while She helped Herself.",
     ],
+    source: "https://en.wikipedia.org/wiki/Pronoun#Gender-specific_and_gender-neutral_pronouns"
   },
   {
     slug: "he-them",
@@ -166,6 +175,7 @@ export const pronounSets: PronounSet[] = [
       "His/Their work was outstanding.",
       "He completed it Himself, while They organized it Themselves.",
     ],
+    source: "https://en.wikipedia.org/wiki/Non-binary_gender#Pronouns_and_titles"
   },
   {
     slug: "they-them",
@@ -183,6 +193,7 @@ export const pronounSets: PronounSet[] = [
       "Their presentation was excellent.",
       "They completed the work Themselves.",
     ],
+    source: "https://en.wikipedia.org/wiki/Singular_they"
   },
   {
     slug: "they-her",
@@ -200,6 +211,7 @@ export const pronounSets: PronounSet[] = [
       "Their/Her project was innovative.",
       "They did it Themselves, while She reviewed it Herself.",
     ],
+    source: "https://en.wikipedia.org/wiki/Non-binary_gender#Pronouns_and_titles"
   },
   {
     slug: "they-him",
@@ -217,6 +229,7 @@ export const pronounSets: PronounSet[] = [
       "Their/His research was groundbreaking.",
       "They finished it Themselves, while He reviewed it Himself.",
     ],
+    source: "https://en.wikipedia.org/wiki/Non-binary_gender#Pronouns_and_titles"
   },
 
   // Standard neopronouns
@@ -237,6 +250,7 @@ export const pronounSets: PronounSet[] = [
       "The discovery was Xyrs. (Possessive pronoun)",
       "Xe completed the project Xemself. (Reflexive)",
     ],
+    source: "https://en.wikipedia.org/wiki/Gender_neutrality_in_languages_with_gendered_third-person_pronouns#Pronouns_and_alternatives"
   },
   {
     slug: "ze-hir",
@@ -254,6 +268,7 @@ export const pronounSets: PronounSet[] = [
       "The research paper is Hir project.",
       "Ze completed the assignment Hirself.",
     ],
+    source: "https://en.wikipedia.org/wiki/Gender_neutrality_in_languages_with_gendered_third-person_pronouns#Table_of_standard_and_non-standard_third-person_singular_pronouns"
   },
   {
     slug: "ze-zir",
@@ -272,6 +287,7 @@ export const pronounSets: PronounSet[] = [
       "The decision was Zirs to make. (Possessive pronoun)",
       "Ze completed the task Zirself. (Reflexive)",
     ],
+    source: "https://en.wikipedia.org/wiki/Gender_neutrality_in_languages_with_gendered_third-person_pronouns#Pronouns_and_alternatives"
   },
 ]
 
