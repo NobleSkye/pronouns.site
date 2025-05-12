@@ -6,12 +6,15 @@ import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
-interface PageProps {
-  params: { pronoun: string }
-}
+type Params = Promise<{ pronoun: string }>
 
-export async function generateMetadata({ params: { pronoun } }: PageProps): Promise<Metadata> {
-  const pronounSet = await getPronounSetBySlug(pronoun);
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const pronounSet = await getPronounSetBySlug(resolvedParams.pronoun);
 
   if (!pronounSet) {
     return {
@@ -39,8 +42,13 @@ export async function generateStaticParams() {
   return slugs.map((slug) => ({ pronoun: slug }));
 }
 
-export default async function PronounPage({ params: { pronoun } }: PageProps) {
-  const pronounSet = await getPronounSetBySlug(pronoun);
+export default async function PronounPage({
+  params,
+}: {
+  params: Params;
+}) {
+  const resolvedParams = await params;
+  const pronounSet = await getPronounSetBySlug(resolvedParams.pronoun);
 
   if (!pronounSet) {
     notFound();
