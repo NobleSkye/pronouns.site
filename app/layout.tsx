@@ -56,7 +56,7 @@ export default function RootLayout({
                   <SuggestButton />
                 </div>
                 <div className="flex items-center gap-2">
-                  <a href="https://github.com/NobleSkye/pronouns.site" 
+                  <a href="https://github.com/nobleskye/pronouns.site" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
