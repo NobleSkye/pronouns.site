@@ -23,7 +23,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="px-8">
               <Link href="/pronouns">Explore Pronouns</Link>
-            </Button>w
+            </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="/about">Learn More</Link>
             </Button>

@@ -62,3 +62,16 @@
   background: linear-gradient(to bottom right, hsl(var(--primary) / 0.2), transparent);
   filter: blur(100px);
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}

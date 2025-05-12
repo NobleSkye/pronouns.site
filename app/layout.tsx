@@ -10,10 +10,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | pronouns.site",
-    default: "pronouns.site",
+    template: "%s | Pronouns.site",
+    default: "Pronouns.site",
   },
-  description: "Educational resource for understanding and using different pronoun sets",
+  description: "Informational resource for understanding and using different pronoun sets",
     generator: 'v0.dev'
 }
 
